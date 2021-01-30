@@ -19,6 +19,7 @@ p {
 
 .actions {
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .bg {
@@ -120,26 +121,61 @@ p {
   padding-top: 3rem;
 }
 
+.btm_img {
+  display: none;
+}
+
 @media (max-width: 1320px) {
-  .connected {
-    display: none;
+  .btn2 {
+    font-size: 20px;
+    margin-left: 2rem;
+    border: 6px solid #A40E4C;
   }
 
-  .connected-low {
-    display: block;
+  .btn2:hover {
+    border: 6px solid #FFAA97;
+  }
+
+  .typeform-share {
+    font-size: 20px;
+  }
+
+  .typeform-share {
+    padding: 12px 23px;
   }
 }
 
-@media (max-width: 1160px) {
-  body {
-    background-image: url(../images/mobile_bg.svg);
-    background-position: right bottom;
-    background-size: 500px;
-    background-attachment: scroll;
-    padding-bottom: 450px;
+@media (max-width: 1230px) {
+  .header {
+    width: 55%;
   }
+
   .text {
-    width: 100%;
+    width: 40%
+  }
+
+  .btn2 {
+    margin-left: 1rem;
+  }
+  .connected {
+    display: none;
+    }
+
+    .connected-low {
+    display: block;
+    margin: 2rem 0;
+    animation: shake 3.0s cubic-bezier(.36, .07, .19, .97) both;
+    animation-delay: 2.0s;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .text {
+    width: 40%;
     font-size: 22px;
   }
 
@@ -160,8 +196,37 @@ p {
   .typeform-share {
     padding: 12px 23px;
   }
+}
+
+@media (max-width: 980px) {
+body {
+  background-image: none;
+}
+.text {
+  width: 100%;
+}
+.connected {
+  display: block;
+  }
 
   .connected-low {
+  display: none;
+}
+
+.header {
+  width: 100%;
+}
+
+}
+
+@media (max-width: 660px) {
+
+  .connected {
+    display: none;
+    }
+
+    .connected-low {
+    display: block;
     margin: 2rem 0;
     animation: shake 3.0s cubic-bezier(.36, .07, .19, .97) both;
     animation-delay: 2.0s;
@@ -169,6 +234,49 @@ p {
     backface-visibility: hidden;
     perspective: 1000px;
   }
+  .btm_img {
+    display: block;
+
+  }
+  .mobile {
+    width: 100vh;
+  float: right;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .text {
+    width: 100%;
+  }
+  }
+
+@media (max-width: 444px) {
+
+  .btn2 {
+    font-size: 10px;
+    margin-left: 1rem;
+  }
+
+  .typeform-share {
+    font-size: 10px;
+  }
+
+}
+@media (max-width: 348px) {
+
+  .btn2 {
+    font-size: 10px;
+    padding: 7.5px 26px;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .typeform-share {
+    font-size: 10px;
+  }
+
 }
 
 @keyframes shake {
