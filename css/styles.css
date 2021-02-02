@@ -29,7 +29,7 @@ margin-right: 100px;
 }
 
 .blocks {
-  position: absolute;
+  position: fixed;
 margin-right: 100px;
   top: 200px;
 }
@@ -149,10 +149,10 @@ background-color: transparent;
   }
 }
 .purp {
-  right: -200px;
+  right: -250px;
 }
 .blocks {
-  right: -200px;
+  right: -250px;
 }
 
 
@@ -193,12 +193,7 @@ background-color: transparent;
 .text {
   width: 50%;
 }
-.purp {
-  right: -250px;
-}
-.blocks {
-  right: -250px;
-}
+
 .connected {
   display: none;
   }
