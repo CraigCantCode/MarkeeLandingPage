@@ -24,15 +24,14 @@ p {
 }
 
 .purp {
-  position: absolute;
-  right: 0;
-  top: 0;
+position: fixed;
+margin-right: 100px;
 }
 
 .blocks {
   position: absolute;
-  right: 0;
-  top: 300px;
+margin-right: 100px;
+  top: 200px;
 }
 
 .typeform-share {
@@ -131,23 +130,7 @@ background-color: transparent;
 }
 
 @media (max-width: 1320px) {
-  .btn2 {
-    font-size: 20px;
-    margin-left: 2rem;
-    border: 6px solid #A40E4C;
-  }
 
-  .btn2:hover {
-    border: 6px solid #FFAA97;
-  }
-
-  .typeform-share {
-    font-size: 20px;
-  }
-
-  .typeform-share {
-    padding: 12px 23px;
-  }
   .purp {
     right: -100px;
   }
@@ -211,10 +194,23 @@ background-color: transparent;
   width: 50%;
 }
 .purp {
-  right: -350px;
+  right: -250px;
 }
 .blocks {
-  right: -350px;
+  right: -250px;
+}
+.connected {
+  display: none;
+  }
+
+  .connected-low {
+  display: block;
+  margin: 2rem 0;
+  animation: shake 3.0s cubic-bezier(.36, .07, .19, .97) both;
+  animation-delay: 1.0s;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 }
@@ -241,19 +237,6 @@ background-color: transparent;
 
 
 @media (max-width: 650px) {
-  .connected {
-    display: none;
-    }
-
-    .connected-low {
-    display: block;
-    margin: 2rem 0;
-    animation: shake 3.0s cubic-bezier(.36, .07, .19, .97) both;
-    animation-delay: 1.0s;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
 
 
   }
@@ -270,7 +253,7 @@ background-color: transparent;
   }
 
 }
-@media (max-width: 355px) {
+@media (max-width: 400px) {
 
 p {
   font-size: 1rem;
